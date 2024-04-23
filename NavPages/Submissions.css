@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
-.header {
+header {
     background: rgb(80, 88, 103);
     float: left;
     width: 100%;
@@ -26,15 +26,4 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-}
-.headerPic {
-    margin-top: 12px;
-    background-image: url('Images/HaynieFamilyBlurr.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 800px;
-    /* border: solid black 5px;
-    border-radius: 5px; */
-    height: 800px; 
 }

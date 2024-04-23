@@ -27,3 +27,20 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 14px;
 }
+.participationInline-block {
+    display: inline-block;
+}
+.participation {
+    padding-top: 50px;
+    margin-left: 10px;
+}
+.participation form input, button {
+    margin-left: 10px;
+}
+body img {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    float: right;
+    border: solid black 5px;
+}

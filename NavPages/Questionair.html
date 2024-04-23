@@ -18,13 +18,87 @@
             <a href="Questionair.html"><strong>Questionair</strong></a>
           </li>
           <li>
-            <a href="#"><strong>Other</strong></a>
+            <a href="Submissions.html"><strong>Submissions</strong></a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
+  <br />
   <body>
-    This is my Questionair
+    <div class="participationInline-block">
+      <div id="participation" class="participation">
+        <h1>Participation</h1>
+        <form id="formReset">
+          Enter your name:<input
+            type="text"
+            id="name"
+            placeholder="First and Last"
+            required
+          />
+          <br />
+          <br />
+          Check the boxes that apply:<br /><br />
+          Are you planning on being at the event?<br />
+          <input type="checkbox" name="yes" /> Yes<br />
+          <input type="checkbox" name="no" /> No
+          <textarea
+            name="other"
+            placeholder="Describe Other Situation"
+          ></textarea>
+          <br /><br />
+          Check the activities you want to participate in:<br /><br />
+          <input
+            type="checkbox"
+            name="activity"
+            value="Stockings"
+          />Stockings<br />
+          <input type="checkbox" name="activity" value="Buddy Gifts" />Buddy
+          Gifts<br />
+          <input
+            type="checkbox"
+            name="activity"
+            value="Minute to Win It Games"
+          />Minute to Win It Games<br />
+          <input
+            type="checkbox"
+            name="activity"
+            value="White Elephant Game"
+          />White Elephant Game<br />
+          <input
+            type="checkbox"
+            name="activity"
+            value="Ultimate Seran Wrap Balls"
+          />Ultimate Seran Wrap Balls<br />
+          <input type="checkbox" name="activity" value="Carson Chats" />Carson
+          Chats<br />
+          Others If Applicable:<br />
+          <input type="checkbox" name="activity" value="Nerf Wars" />Nerf
+          Wars<br />
+          <input type="checkbox" name="activity" value="Jackbox Games" />Jackbox
+          Games<br />
+          <input
+            type="checkbox"
+            name="activity"
+            value="Singing Fun-ness"
+          />Singing Fun-ness<br />
+          <input type="text" name="other" placeholder="Add Other" /><br /><br />
+          If you would like to donate to the cause:<br /><br />
+          Amount: $<input
+            type="number"
+            placeholder="1000? Hey Big Spender!"
+          /><br /><br />
+          <!--add event listener that copy/pastes the survey below to add to the submition. -->
+          <button>Add Family Member or SigOther</button><br /><br />
+          <button type="submit"><stront>Submit</stront></button>
+        </form>
+      </div>
+    </div>
+    <img src="../Images/FamilyStairs2.png" />
+    <img src="../Images/FamilyStairs.png" />
+    <div>
+      <p id="participationSurveySub"></p>
+    </div>
   </body>
+  <script src="Questionair.js"></script>
 </html>
