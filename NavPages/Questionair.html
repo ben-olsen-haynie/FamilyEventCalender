@@ -5,19 +5,19 @@
     <link rel="stylesheet" href="Questionair.css" />
   </head>
   <header>
-    <div class="navContainer">
+    <div class="nav-container">
       <nav>
-        <ul>
-          <li>
+        <ul class="nav-flex-container">
+          <li class="nav-item">
             <a href="../FamilyEventCalender.html"><strong>Home</strong></a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="Calender.html"><strong>Calender</strong></a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="Questionair.html"><strong>Questionair</strong></a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="Submissions.html"><strong>Submissions</strong></a>
           </li>
         </ul>
@@ -26,79 +26,150 @@
   </header>
   <br />
   <body>
-    <div class="participationInline-block">
-      <div id="participation" class="participation">
-        <h1>Participation</h1>
-        <form id="formReset">
-          Enter your name:<input
-            type="text"
-            id="name"
-            placeholder="First and Last"
-            required
-          />
-          <br />
-          <br />
-          Check the boxes that apply:<br /><br />
-          Are you planning on being at the event?<br />
-          <input type="checkbox" name="yes" /> Yes<br />
-          <input type="checkbox" name="no" /> No
-          <textarea
-            name="other"
-            placeholder="Describe Other Situation"
-          ></textarea>
-          <br /><br />
-          Check the activities you want to participate in:<br /><br />
-          <input
-            type="checkbox"
-            name="activity"
-            value="Stockings"
-          />Stockings<br />
-          <input type="checkbox" name="activity" value="Buddy Gifts" />Buddy
-          Gifts<br />
-          <input
-            type="checkbox"
-            name="activity"
-            value="Minute to Win It Games"
-          />Minute to Win It Games<br />
-          <input
-            type="checkbox"
-            name="activity"
-            value="White Elephant Game"
-          />White Elephant Game<br />
-          <input
-            type="checkbox"
-            name="activity"
-            value="Ultimate Seran Wrap Balls"
-          />Ultimate Seran Wrap Balls<br />
-          <input type="checkbox" name="activity" value="Carson Chats" />Carson
-          Chats<br />
-          Others If Applicable:<br />
-          <input type="checkbox" name="activity" value="Nerf Wars" />Nerf
-          Wars<br />
-          <input type="checkbox" name="activity" value="Jackbox Games" />Jackbox
-          Games<br />
-          <input
-            type="checkbox"
-            name="activity"
-            value="Singing Fun-ness"
-          />Singing Fun-ness<br />
-          <input type="text" name="other" placeholder="Add Other" /><br /><br />
-          If you would like to donate to the cause:<br /><br />
-          Amount: $<input
-            type="number"
-            placeholder="1000? Hey Big Spender!"
-          /><br /><br />
-          <!--add event listener that copy/pastes the survey below to add to the submition. -->
-          <button>Add Family Member or SigOther</button><br /><br />
-          <button type="submit"><stront>Submit</stront></button>
-        </form>
+    <div class="flex-container">
+      <div class="item">
+        <div id="participation" class="participation">
+          <h1>Participation</h1>
+          <form id="participationFormReset">
+            Enter your name:<input
+              type="text"
+              id="name"
+              placeholder="First and Last"
+              required
+            />
+            <br />
+            <br />
+            Check the boxes that apply:<br /><br />
+            Are you planning on being at the event?<br />
+            <input
+              type="checkbox"
+              name="yesNo"
+              value="Will be attending this event!"
+            />
+            Yes<br />
+            <input
+              type="checkbox"
+              name="yesNo"
+              value="Will not be attending this event. Sad face."
+            />
+            No<br />
+            <textarea
+              id="otherSituation"
+              placeholder="Describe Other Situation"
+            ></textarea>
+            <br /><br />
+            Check the activities you want to participate in:<br /><br />
+            <input
+              type="checkbox"
+              name="activity"
+              value="Stockings"
+            />Stockings<br />
+            <input type="checkbox" name="activity" value="Buddy Gifts" />Buddy
+            Gifts<br />
+            <input
+              type="checkbox"
+              name="activity"
+              value="Minute to Win It Games"
+            />Minute to Win It Games<br />
+            <input
+              type="checkbox"
+              name="activity"
+              value="White Elephant Game"
+            />White Elephant Game<br />
+            <input
+              type="checkbox"
+              name="activity"
+              value="Ultimate Seran Wrap Balls"
+            />Ultimate Seran Wrap Balls<br />
+            <input type="checkbox" name="activity" value="Carson Chats" />Carson
+            Chats<br />
+            Others If Applicable:<br />
+            <input type="checkbox" name="activity" value="Nerf Wars" />Nerf
+            Wars<br />
+            <input
+              type="checkbox"
+              name="activity"
+              value="Jackbox Games"
+            />Jackbox Games<br />
+            <input
+              type="checkbox"
+              name="activity"
+              value="Singing Fun-ness"
+            />Singing Fun-ness<br />
+            <input
+              type="text"
+              id="addOther"
+              placeholder="Add Other"
+            /><br /><br />
+            If you would like to donate to the cause:<br /><br />
+            Amount: $<input
+              type="number"
+              id="donationAmount"
+              placeholder="1000? Hey Big Spender!"
+            /><br /><br /><br><br>
+            <!--add event listener that copy/pastes the survey below to add to the submition. -->
+            <!-- <button>Add Family Member or SigOther</button><br /><br /> -->
+            <button type="submit"><stront>Submit</stront></button>
+          </form>
+        </div>
+      </div>
+      
+    <!-- <img src="../Images/FamilyStairs2.png" />
+    <img src="../Images/FamilyStairs.png" /> -->
+    <div class="item">
+      <div class="subTitles">
+        <h1>Submissions</h1>
+        <p id="participationSurveySub1"></p>
       </div>
     </div>
-    <img src="../Images/FamilyStairs2.png" />
-    <img src="../Images/FamilyStairs.png" />
-    <div>
-      <p id="participationSurveySub"></p>
+    <div class="item">
+      <div class="subTitles">
+        <h1>Submissions-Full View</h1>
+        <div id="participationSurveySub2">
+          <h3>All Attending Event:</h3>
+          <br />
+          <p id="attending"></p>
+          <h3>Events:</h3>
+          <br />
+          <h4>Stockings:</h4>
+          <br />
+          <p id="Stockings"></p>
+          <br />
+          <h4>Buddy Gifts:</h4>
+          <br />
+          <p id="Buddy Gifts"></p>
+          <br />
+          <h4>Minute to Win It Games:</h4>
+          <br />
+          <p id="Minute to Win It Games"></p>
+          <br />
+          <h4>Ultimate Seran Wap Balls:</h4>
+          <br />
+          <p id="Ultimate Seran Wrap Balls"></p>
+          <br />
+          <h4>Carson Chats:</h4>
+          <br />
+          <p id="Carson Chats"></p>
+          <br />
+          <h4>Nerf Wars:</h4>
+          <br />
+          <p id="Nerf Wars"></p>
+          <br />
+          <h4>Jackbox Games:</h4>
+          <br />
+          <p id="Jackbox Games"></p>
+          <br />
+          <h4>Singing Fun-ness:</h4>
+          <br />
+          <p id="Singing Fun-ness"></p>
+          <br />
+          <h4>Wanting to Add:</h4>
+          <br />
+          <p id="toAdd"></p>
+          <br />
+        </div>
     </div>
+  </div>
   </body>
   <script src="Questionair.js"></script>
 </html>
