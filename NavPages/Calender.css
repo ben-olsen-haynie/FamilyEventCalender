@@ -1,4 +1,5 @@
-html, body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -27,3 +28,65 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 14px;
 }
+
+.calender-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.prev-month, .next-month {
+    padding: 5px 10px;
+    background-color: #007bff;
+}
+
+#calender {
+    background-color: grey;
+    border: solid grey;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+#calender .day {
+    background-color: white;
+    border: solid green;
+    height: 170px;
+}
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#calenderKey {
+    float: right;
+    background-color: green;
+}
+
+.popup {
+    border: solid black 2px;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+    
+}
+
+
+
+
+
+
+/* if you want to later on change each month settings, make sure the month id is capitalized. */
+/* #calender #February .day {
+    color: black;
+} */
